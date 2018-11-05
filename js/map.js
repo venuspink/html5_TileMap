@@ -1,5 +1,5 @@
-var width =36;
-var height = 36;
+var width =48;
+var height = 48;
 
 var map = [
     1,1,1,1,1,0,0,0,0,0,0,0,
@@ -26,8 +26,8 @@ Game.run = function(canvas, context){
         x = e.offsetX;
         y = e.offsetY;
 
-        targetTileX = Math.floor(x / 36);
-        targetTileY = Math.floor(y / 36);
+        targetTileX = Math.floor(x / width);
+        targetTileY = Math.floor(y / height);
 
         var index = targetTileX + (12 * targetTileY);
 
@@ -43,7 +43,7 @@ Game.drawGrid = function(){
     this.ctx.lineWidth = 1;
     for(var r=0; r<=4; r++){
         for(var c = 0; c<=11; c++){
-            this.ctx.strokeRect(36*c,36*r,36,36);   
+            this.ctx.strokeRect(width * c,height * r,width,height);
         } 
     }
 
