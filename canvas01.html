@@ -7,12 +7,27 @@
         integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
         crossorigin="anonymous"></script>
 
+        <script src="js/hashmap.js" ></script>
         <script src="js/map.js" ></script>
+
     </head>
 
     <body>
-
+        <!-- <div>
         <canvas id="map" width="500" height="500"></canvas>
+        </div>
+        <div>
+            <img src="hero/seohwang/mov.bmp" style="display:none;" id="hh"/>
+        </div> -->
 
+        <div style="position: relative;" id="container">
+            <canvas id="map" width="500" height="500" 
+              style="position: absolute; left: 0; top: 0; z-index: 0;"></canvas>
+            <!-- <canvas id="hero" width="48" height="48" 
+              style="position: absolute; left: 0; top: 0; z-index: 1;"></canvas> -->
+        </div>
+        <div style="position: absolute; top: 20px; right: 30px; ">
+        <input type="button" value="추가" onclick="addHero();"/>
+        </div>
     </body>
 </html>
