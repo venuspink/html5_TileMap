@@ -1,15 +1,30 @@
 <!doctype html>
-<html>
+<html lang="ko">
     <head>
-
+    <meta charset="UTF-8">
         <script
         src="https://code.jquery.com/jquery-2.2.4.js"
         integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
         crossorigin="anonymous"></script>
 
         <script src="js/hashmap.js" ></script>
+        <script src="js/sprite.js" ></script>
         <script src="js/map.js" ></script>
 
+
+        <style>
+            body {
+                margin:0 auto;
+            }
+            .sjs {
+                background:#f1f4fe;
+                border:1px #333 solid;
+            }
+            h2 {
+                font-size:14px;
+            }
+
+        </style>
     </head>
 
     <body>
@@ -20,14 +35,19 @@
             <img src="hero/seohwang/mov.bmp" style="display:none;" id="hh"/>
         </div> -->
 
-        <div style="position: relative;" id="container">
-            <canvas id="map" width="500" height="500" 
-              style="position: absolute; left: 0; top: 0; z-index: 0;"></canvas>
+        <div style="position: relative; left:80px;" id="container">
+            <canvas id="map" width="1000" height="1000"
+              style="position: absolute; left: 100; top: 0; z-index: 0;"></canvas>
             <!-- <canvas id="hero" width="48" height="48" 
               style="position: absolute; left: 0; top: 0; z-index: 1;"></canvas> -->
         </div>
         <div style="position: absolute; top: 20px; right: 30px; ">
-        <input type="button" value="추가" onclick="addHero();"/>
+        <input type="button" value="추가" onclick="addHero('ZZ');"/>
+        </div>
+
+
+        <div style="position: absolute; top: 50px; right: 30px; ">
+            <button onclick="">위치이동</button>
         </div>
     </body>
 </html>
