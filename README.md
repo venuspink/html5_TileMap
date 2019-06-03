@@ -4,3 +4,5 @@ html5 캔버스로 구현하는 타일맵 테스트.
 
 ## RESOURCE
 javascript HashMap : https://github.com/flesler/hashmap
+
+캐릭터 좌표이동 및 이벤트, 모션 등에 대한 전반적인 함수를 생성 및 구분
