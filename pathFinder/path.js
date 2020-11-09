@@ -4,9 +4,9 @@
  1. 해당 목적지로의 이동 방향은 좌,우 먼저 체크. 그 다음 위, 아래 체크
 
  */
-const START_LOC = {x: 10,y: 0}; //시작위치
+const START_LOC = {x: 2,y: 2}; //시작위치
 let CURRENT_LOC = START_LOC; //현재위치
-const TARGET_LOC = {x: 2,y: 0}; //목표지점
+const TARGET_LOC = {x: 10,y: 6}; //목표지점
 
 const WALL = [{x: 3,y: 0}, {x: 2, y: 1}, { x: 4,y: 3}, {x: 3, y: 2}, {x: 2,y: 3}, {x: 4,y: 4},
     { x: 2,y: 5}, {x: 8,y: 6}, {x: 8,y: 7}, {x: 6,y: 5}, {x: 6,y: 4}, {x: 6,y: 3}, {x: 8,y: 8}
